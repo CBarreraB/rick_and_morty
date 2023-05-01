@@ -1,16 +1,34 @@
 import React from "react";
 import styled from "./Nav.module.css";
 import SearchBar from "../SearchBar/SearchBar";
-import imageLogo from "../../assests/image/logoNav.png";
+//import { Link } from "react-router-dom";
 
 const Nav = (props) => {
-  const { onSearch } = props;
+  const { onSearch, setAccess } = props;
 
+  const handleLogOut = () => {
+    setAccess(false);
+  };
   return (
     <div className={styled.nav}>
-      <img src={imageLogo} alt="logo rick and morty" className={styled.img} />
+      <div>
+        <SearchBar onSearch={onSearch} />
+        {/* <Link to="/about">
+          <button className={styled.btn}>About</button>
+        </Link>
 
-      <SearchBar onSearch={onSearch} />
+        <Link to="/home">
+          <button className={styled.btn}>Home</button>
+        </Link>
+
+        <Link to="/favorites">
+          <button className={styled.btn}>Favorites</button>
+        </Link> */}
+
+        <button onClick={handleLogOut} className={styled.btn}>
+          LOG OUT
+        </button>
+      </div>
     </div>
   );
 };

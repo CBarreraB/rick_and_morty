@@ -6,8 +6,9 @@
   justify-content: center;
   margin-bottom: 1em;
 }
-.img {
-  max-width: 555%;
-  height: auto;
-  margin: 0;
+
+.btn {
+  height: 40px;
+  width: 60px;
+  margin-top: 30px;
 }

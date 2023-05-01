@@ -11,7 +11,7 @@ export default function SearchBar(props) {
   };
 
   const handleChange = (event) => {
-    setId(event.target.velue);
+    setId(event.target.value);
   };
 
   return (
@@ -27,8 +27,8 @@ export default function SearchBar(props) {
         value={id}
       />
       <button
-        className={styled.searchButton}
-        onClick={() => props.onSearch(id)}>
+        onClick={() => props.onSearch(id)}
+        className={styled.searchButton}>
         Add
       </button>
     </div>
