@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.paragraph {
+  margin: 20%;
+  margin-top: 10px;
+  text-align: justify;
+  font-size: medium;
+  color: white;
+  background-color: black;
+}
